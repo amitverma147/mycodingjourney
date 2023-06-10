@@ -1,10 +1,10 @@
   #include<stdio.h>
   void gm(int n)
   {
-   for(int i=1;i<=n;i++)
-  {
-    printf("Good morning \n");
-  }
+    if(n==0); return ;
+   printf("good morning\n");
+   gm(n-1);
+   return;
   }
   int main()
   {
